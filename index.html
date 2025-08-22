@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sejal Shaji</title>
 
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Animate.css CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -35,67 +39,112 @@
     a:hover {
       text-decoration: underline;
     }
+    @media (max-width: 768px) {
+      header {
+        padding: 40px 15px;
+      }
+      .section-padding {
+        padding: 40px 15px;
+      }
+      h1.display-4 {
+        font-size: 2rem;
+      }
+      p.lead {
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header class="text-center animate__animated animate__fadeInDown">
-    <h1 class="display-4">Sejal Shaji</h1>
+    <h1 class="display-4 fw-bold">Sejal Shaji</h1>
     <p class="lead">Full-Stack Developer | Web Enthusiast</p>
   </header>
 
+  <!-- About Me -->
   <section class="container section-padding">
-    <div class="animate__animated animate__fadeInUp">
-      <h2>About Me</h2>
-      <p>I am a responsible and organized individual, eager to gain experience in my first professional role.</p>
+    <div class="row justify-content-center text-center animate__animated animate__fadeInUp">
+      <div class="col-lg-8">
+        <h2>About Me</h2>
+        <p>I am a responsible and organized individual, eager to gain experience in my first professional role.</p>
+      </div>
     </div>
   </section>
 
+  <!-- Education -->
   <section class="container section-padding bg-light">
-    <div class="animate__animated animate__zoomIn">
-      <h2>Education</h2>
-      <p>Bachelor of Computer Applications – University of Kerala</p>
-      <p>CGPA: 8.212 (First Class with Distinction)</p>
+    <div class="row justify-content-center text-center animate__animated animate__zoomIn">
+      <div class="col-lg-8">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Applications</strong> – University of Kerala</p>
+        <p>CGPA: 8.212 (First Class with Distinction)</p>
+      </div>
     </div>
   </section>
 
+  <!-- Projects -->
   <section class="container section-padding">
-    <div class="animate__animated animate__fadeInLeft">
-      <h2>Projects</h2>
-      <ul>
-        <li><a href="https://github.com/sejal2004shaji" target="_blank">PIck A Pet– Pet Marketing</a></li>
-        <li><a href="https://github.com/sejal2004shaji" target="_blank">Aikyam – Women Empowerment Platform</a></li>
-      </ul>
+    <div class="row animate__animated animate__fadeInLeft">
+      <div class="col-12">
+        <h2 class="text-center mb-4">Projects</h2>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <a href="https://github.com/sejal2004shaji" target="_blank">
+              PICK A PET – Pet Marketing Platform
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a href="https://github.com/sejal2004shaji" target="_blank">
+              AIKYAM – Women Empowerment Platform
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
+  <!-- Skills -->
   <section class="container section-padding bg-light">
-    <div class="animate__animated animate__fadeInRight">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python, Django, PHP, JavaScript</li>
-        <li>HTML, CSS, MySQL</li>
-       
-      </ul>
+    <div class="row justify-content-center animate__animated animate__fadeInRight">
+      <div class="col-lg-8 text-center">
+        <h2>Skills</h2>
+        <p>Python, Django, PHP, JavaScript</p>
+        <p>HTML, CSS, MySQL</p>
+      </div>
     </div>
   </section>
 
+  <!-- Contact -->
   <section class="container section-padding">
-    <div class="animate__animated animate__fadeInUp">
-      <h2>Contact</h2>
-      <p>Email: sejalshaji10@gmail,com.com</p>
-   
+    <div class="row justify-content-center text-center animate__animated animate__fadeInUp">
+      <div class="col-lg-6">
+        <h2>Contact</h2>
+        <p><i class="bi bi-envelope-fill"></i> 
+          Email: <a href="mailto:sejalshaji10@gmail.com">sejalshaji10@gmail.com</a>
+        </p>
+        <p><i class="bi bi-linkedin"></i> 
+          LinkedIn: <a href="https://www.linkedin.com/in/sejal-shaji/" target="_blank">
+            linkedin.com/in/sejal-shaji
+          </a>
+        </p>
+        <p><i class="bi bi-github"></i> 
+          GitHub: <a href="https://github.com/sejal2004shaji" target="_blank">
+            github.com/sejal2004shaji
+          </a>
+        </p>
+      </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>©2025 Sejal Shaji</p>
+    <p>© 2025 Sejal Shaji</p>
   </footer>
 
   <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
 
